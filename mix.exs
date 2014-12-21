@@ -3,7 +3,7 @@ defmodule CloudIServiceDbMemcached do
 
   def project do
     [app: :cloudi_service_db_memcached,
-     version: "1.4.0-rc.4",
+     version: "1.4.0",
      language: :erlang,
      description: description,
      package: package,
@@ -14,7 +14,7 @@ defmodule CloudIServiceDbMemcached do
     [{:ememcached,
       [git: "https://github.com/okeuday/ememcached.git",
        branch: "master"]},
-     {:cloudi_core, "~> 1.4.0-rc.4"}]
+     {:cloudi_core, "~> 1.4.0"}]
   end
 
   defp description do
